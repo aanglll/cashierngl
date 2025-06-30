@@ -2,6 +2,8 @@
 
 Cashier-ngl is a web-based cashier application built with Laravel 11, PHP 8.2, and various essential packages to provide seamless management of sales, purchases, inventory, and user roles.
 
+![Dashboard Preview](https://github.com/aanglll/cashier-ngl/raw/main/public/assets/img/dashboard.png)
+
 ## Requirements
 - PHP 8.2
 - XAMPP
