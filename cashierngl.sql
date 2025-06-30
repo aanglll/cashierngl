@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 30, 2025 at 07:50 AM
+-- Generation Time: Jun 30, 2025 at 07:58 AM
 -- Server version: 10.11.11-MariaDB-0+deb12u1
 -- PHP Version: 8.2.28
 
@@ -717,7 +717,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `site_name`, `site_logo`, `favicon`, `site_title`, `receipt_header`, `receipt_footer`, `created_at`, `updated_at`) VALUES
-(1, 'Kasirngl 24/7', 'settings/3q13npzApx6ySWJIaHVxHUPz7DOX5NhCYSqr6uZq.png', 'settings/CH1SvvzCAEqMB7dEAUNICyCbYtqnrU4Ia6UZ8ecj.png', 'Kasirngl 24/7', '<br>We appreciate your visit! Here is your receipt for today\'s purchase. Have a great day!', 'Thank you for shopping with us! We look forward to serving you again.', '2025-03-11 08:15:32', '2025-03-15 18:27:11');
+(1, 'Cashierngl 24/7', 'settings/3q13npzApx6ySWJIaHVxHUPz7DOX5NhCYSqr6uZq.png', 'settings/CH1SvvzCAEqMB7dEAUNICyCbYtqnrU4Ia6UZ8ecj.png', 'Cashierngl 24/7', '<br>We appreciate your visit! Here is your receipt for today\'s purchase. Have a great day!', 'Thank you for shopping with us! We look forward to serving you again.', '2025-03-11 08:15:32', '2025-06-30 18:58:09');
 
 -- --------------------------------------------------------
 
