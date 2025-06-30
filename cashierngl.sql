@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.1deb1+deb12u1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Mar 20, 2025 at 02:20 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Host: localhost:3306
+-- Generation Time: Jun 30, 2025 at 07:50 AM
+-- Server version: 10.11.11-MariaDB-0+deb12u1
+-- PHP Version: 8.2.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `kasirngll`
+-- Database: `cashierngl`
 --
 
 DELIMITER $$
@@ -118,19 +118,17 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`id`, `name`, `address`, `phone`, `created_at`, `updated_at`) VALUES
-(1, 'Putra Agil Lukyanto', '8CJV+985, Sruni, Wukirsari, Kec. Cangkringan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55583', '2147483647', '2024-12-09 18:46:34', '2024-12-09 19:35:48'),
-(2, 'Slamet Lindu Aji', 'Sumber Batikan RT.02, Sumber Batikan, Trirenggo, Kec. Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55714', '2147483647', '2024-12-09 18:50:46', '2024-12-09 19:38:35'),
-(3, 'Fatahhillah Ibnu Said', 'Peciro, Murtigading, Sanden, Bantul Regency, Special Region of Yogyakarta 55763', '2147483647', '2024-12-09 19:03:35', '2025-02-08 04:51:06'),
-(5, 'Tio Adi Saputra', '28VF+6PF, Jl. Paker Dawetan Dusun Paker, Paker, Mulyodadi, Kec. Bambanglipuro, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55764', '2147483647', '2024-12-09 19:43:04', '2024-12-09 19:45:12'),
-(6, 'Gilang Jati Nugraha', 'Jati, Jl. Imogiri - Siluk, Sriharjo, Kec. Imogiri, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55782', '2147483647', '2024-12-09 19:46:51', '2024-12-09 19:46:51'),
-(7, 'Khanif Rokhawi', 'Jl. Turi kulon Jl. Cangkring Raya, Cangkring, Sumberagung, Kec. Jetis, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55781', '2147483647', '2024-12-09 19:52:03', '2024-12-09 19:52:03'),
-(8, 'Fairuz Zaki', '397P+VMJ, Mojo Legi, Karangtengah, Kec. Imogiri, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55782', '2147483647', '2024-12-09 19:56:12', '2024-12-09 19:56:12'),
-(9, 'Andika Jaya Saputra', '397P+VMJ, Mojo Legi, Karangtengah, Kec. Imogiri, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55782', '2147483647', '2025-02-05 01:25:32', '2025-02-05 01:25:32'),
-(10, 'Soleh Fadil Sabana', '597F+FM9, Jl. Imogiri Barat, Tanjung, Bangunharjo, Kec. Sewon, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55188', '2147483647', '2025-02-08 04:47:55', '2025-02-08 04:47:55'),
-(11, 'Rafa Nufal Yusuf P.', 'Jl. Parangtritis No.Km.7, Cabean, Panggungharjo, Kec. Sewon, Kabupaten Bantul, Daerah Istimewa Yogyakarta 31554', '2147483647', '2025-02-08 05:00:44', '2025-02-08 05:01:09'),
-(12, 'Irfan Nugroho', 'Dusun Santan, RT.01, Santan, Guwosari, Kec. Pajangan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55751', '2147483647', '2025-02-08 05:02:41', '2025-02-08 05:02:41'),
-(13, 'Gilang', 'Jati,', '2147483647', '2025-03-18 02:13:29', '2025-03-18 02:13:29'),
-(14, 'John Doe', '123 Street, City', '2147483647', '2025-03-18 13:27:01', '2025-03-18 13:27:01');
+(1, 'Raka Pratama', 'Dusun Sukamaju, RT.02, Sukamaju, Tanjungsari, Kec. Cijeruk, Kabupaten Bogor, Jawa Barat 16740', '2147483647', '2024-12-09 18:46:34', '2024-12-09 19:35:48'),
+(2, 'Nadia Azzahra', 'Dusun Ngadirejo, RT.03, Ngadirejo, Pujon, Kec. Pujon, Kabupaten Malang, Jawa Timur 65391', '2147483647', '2024-12-09 18:50:46', '2024-12-09 19:38:35'),
+(3, 'Dimas Putra', 'Dusun Cikaret, RT.01, Cikaret, Cisarua, Kec. Cisarua, Kabupaten Bogor, Jawa Barat 16750', '2147483647', '2024-12-09 19:03:35', '2025-02-08 04:51:06'),
+(5, 'Aulia Rahma', 'Dusun Talang Sari, RT.04, Talang, Kemuning, Kec. Kemuning, Kabupaten Musi Rawas, Sumatera Selatan 31661', '2147483647', '2024-12-09 19:43:04', '2024-12-09 19:45:12'),
+(6, 'Salsa Nabila', 'Dusun Karanganyar, RT.02, Karanganyar, Kedungwuni, Kec. Kedungwuni, Kabupaten Pekalongan, Jawa Tengah 51173', '2147483647', '2024-12-09 19:46:51', '2024-12-09 19:46:51'),
+(7, 'Fajar Alamsyah', 'Dusun Sumberjo, RT.05, Sumberjo, Talun, Kec. Talun, Kabupaten Blitar, Jawa Timur 66183', '2147483647', '2024-12-09 19:52:03', '2024-12-09 19:52:03'),
+(8, 'Vira Meilani', 'Dusun Tegalrejo, RT.03, Tegalrejo, Gunungpati, Kec. Gunungpati, Kota Semarang, Jawa Tengah 50226', '2147483647', '2024-12-09 19:56:12', '2024-12-09 19:56:12'),
+(9, 'Rendi Kurniawan', 'Dusun Batuputih, RT.01, Batuputih, Tanjung Bumi, Kec. Tanjung Bumi, Kabupaten Bangkalan, Jawa Timur 69155', '2147483647', '2025-02-05 01:25:32', '2025-02-05 01:25:32'),
+(10, 'Citra Anjani', 'Dusun Sidomulyo, RT.04, Sidomulyo, Natar, Kec. Natar, Kabupaten Lampung Selatan, Lampung 35362', '2147483647', '2025-02-08 04:47:55', '2025-02-08 04:47:55'),
+(11, 'Arya Saputra', 'Dusun Sambirejo, RT.02, Sambirejo, Mantingan, Kec. Mantingan, Kabupaten Ngawi, Jawa Timur 63257', '2147483647', '2025-02-08 05:00:44', '2025-02-08 05:01:09'),
+(12, 'Ilham Fauzan', 'Dusun Pucangan, RT.03, Pucangan, Kartasura, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57168', '2147483647', '2025-02-08 05:02:41', '2025-02-08 05:02:41');
 
 -- --------------------------------------------------------
 
@@ -359,9 +357,7 @@ INSERT INTO `products` (`id`, `id_category`, `product_name`, `product_units`, `p
 (5, '2', 'Orico Skt3 Usb Sound Card External', '1', 125000.00, 130000.00, 0, 130000.00, 0, 'ODU-O.SC', '1.) Material : ABS 2.) Color : Black 3.) Surface : Textured surface 4.) Output interface : USB-A*1, 3.5mm*1(microphone amp;earphone), 3.5mm earphone*1, 3.5mm microphone*1 5.) Input interface : USB2.0 6.) Cable length : 10cm', '2025-02-05 20:14:29', '2025-03-19 05:43:48'),
 (6, '1', 'Ugreen 10 in 1 USB C Multi Docking', '2', 475000.00, 485000.00, 0, 485000.00, 0, 'IDP-U.MD-10', 'Ugreen 10 in 1 USB C Multi Docking RJ45 HDMI VGA USB 3.0 PD 3.5mm Audio CardReader', '2025-02-05 20:19:02', '2025-03-19 05:13:46'),
 (8, '1', 'Logitech K120 USB QWERTZ Hongaria', '1', 110000.00, 115000.00, 0, 115000.00, 1, 'IDU-L.KH', 'Standard Keyboard Spill-resistant USB 1 Year (Local Official Distributor Warranty)', '2025-02-05 22:26:58', '2025-03-19 14:46:04'),
-(9, '2', 'Dell Value Monitor 18.5inch D1918H', '4', 1900000.00, 2000000.00, 0, 2000000.00, 0, 'ODP-D.VM-18', '5 typical (white to black, black to white)', '2025-02-05 23:43:56', '2025-03-19 05:13:06'),
-(11, '2', 'Golda Coffe', '1', 4000.00, 5000.00, 10, 4500.00, 198, 'ODU-GC', 'kopi', '2025-03-19 04:43:31', '2025-03-19 05:43:48'),
-(12, '5', 'Phanter', '2', 1000.00, 2000.00, 10, 1800.00, 195, 'CSP-P', NULL, '2025-03-19 14:12:42', '2025-03-19 14:46:04');
+(9, '2', 'Dell Value Monitor 18.5inch D1918H', '4', 1900000.00, 2000000.00, 0, 2000000.00, 0, 'ODP-D.VM-18', '5 typical (white to black, black to white)', '2025-02-05 23:43:56', '2025-03-19 05:13:06');
 
 --
 -- Triggers `products`
@@ -416,8 +412,8 @@ CREATE TABLE `product_logs` (
 --
 
 INSERT INTO `product_logs` (`id`, `product_id`, `category_id`, `product_name`, `deleted_at`) VALUES
-(1, 7, 5, 'REDRAGON Water CPU Cooler Effect X CCW-3000', '2025-03-16 18:11:46'),
-(2, 10, 2, 'Teh Gelas', '2025-03-18 02:27:44');
+(3, 11, 2, 'Golda Coffe', '2025-06-30 07:39:25'),
+(4, 12, 5, 'Phanter', '2025-06-30 07:39:25');
 
 -- --------------------------------------------------------
 
@@ -474,9 +470,7 @@ INSERT INTO `purchases` (`id`, `user_id`, `supplier_id`, `discount`, `ppn`, `tot
 (8, 1, 2, 22000.00, 21780.00, 219780.00, 220000.00, 220.00, '2025-03-12 01:02:06', '2025-03-12 01:02:06'),
 (9, 1, 2, 11000.00, 10890.00, 109890.00, 110000.00, 110.00, '2025-03-16 14:31:51', '2025-03-16 14:31:51'),
 (12, 1, NULL, 0.00, 13750.00, 138750.00, 150000.00, 11250.00, '2025-03-17 23:10:10', '2025-03-17 23:10:10'),
-(13, 1, NULL, 0.00, 24200.00, 244200.00, 250000.00, 5800.00, '2025-03-18 02:21:35', '2025-03-18 02:21:35'),
-(14, 1, NULL, 0.00, 88000.00, 888000.00, 900000.00, 12000.00, '2025-03-19 04:55:29', '2025-03-19 04:55:29'),
-(15, 1, NULL, 0.00, 22000.00, 222000.00, 250000.00, 28000.00, '2025-03-19 14:18:13', '2025-03-19 14:18:13');
+(13, 1, NULL, 0.00, 24200.00, 244200.00, 250000.00, 5800.00, '2025-03-18 02:21:35', '2025-03-18 02:21:35');
 
 -- --------------------------------------------------------
 
@@ -508,9 +502,7 @@ INSERT INTO `purchase_details` (`id`, `purchase_id`, `product_id`, `purchase_pri
 (7, 8, 8, 110000.00, 2, 220000.00, '2025-03-12 01:02:06', '2025-03-12 01:02:06'),
 (8, 9, 8, 110000.00, 1, 110000.00, '2025-03-16 14:31:51', '2025-03-16 14:31:51'),
 (11, 12, 5, 125000.00, 1, 125000.00, '2025-03-17 23:10:10', '2025-03-17 23:10:10'),
-(12, 13, 8, 110000.00, 2, 220000.00, '2025-03-18 02:21:35', '2025-03-18 02:21:35'),
-(13, 14, 11, 4000.00, 200, 800000.00, '2025-03-19 04:55:29', '2025-03-19 04:55:29'),
-(14, 15, 12, 1000.00, 200, 200000.00, '2025-03-19 14:18:13', '2025-03-19 14:18:13');
+(12, 13, 8, 110000.00, 2, 220000.00, '2025-03-18 02:21:35', '2025-03-18 02:21:35');
 
 -- --------------------------------------------------------
 
@@ -663,8 +655,6 @@ INSERT INTO `sales` (`id`, `user_id`, `customer_id`, `discount`, `ppn`, `total_p
 (23, 1, 2, 11500.00, 11385.00, 114885.00, 115000.00, 115.00, '2025-03-16 13:30:41', '2025-03-16 13:30:41'),
 (24, 1, NULL, 0.00, 440000.00, 4440000.00, 4500000.00, 60000.00, '2025-03-16 15:00:40', '2025-03-16 15:00:40'),
 (25, 1, NULL, 0.00, 14300.00, 144300.00, 150000.00, 5700.00, '2025-03-17 23:11:07', '2025-03-17 23:11:07'),
-(26, 1, 13, 11500.00, 11385.00, 114885.00, 115000.00, 115.00, '2025-03-18 02:18:33', '2025-03-18 02:18:33'),
-(27, 1, 13, 13900.00, 13761.00, 138861.00, 140000.00, 1139.00, '2025-03-19 05:43:48', '2025-03-19 05:43:48'),
 (28, 1, NULL, 0.00, 13640.00, 137640.00, 150000.00, 12360.00, '2025-03-19 14:46:04', '2025-03-19 14:46:04');
 
 -- --------------------------------------------------------
@@ -702,10 +692,6 @@ INSERT INTO `sales_details` (`id`, `sales_id`, `product_id`, `before_discount`, 
 (30, 23, 8, NULL, NULL, 115000.00, 1, 115000.00, '2025-03-16 13:30:41', '2025-03-16 13:30:41'),
 (31, 24, 9, NULL, NULL, 2000000.00, 2, 4000000.00, '2025-03-16 15:00:40', '2025-03-16 15:00:40'),
 (32, 25, 5, NULL, NULL, 130000.00, 1, 130000.00, '2025-03-17 23:11:07', '2025-03-17 23:11:07'),
-(33, 26, 8, NULL, NULL, 115000.00, 1, 115000.00, '2025-03-18 02:18:33', '2025-03-18 02:18:33'),
-(34, 27, 5, NULL, NULL, 130000.00, 1, 130000.00, '2025-03-19 05:43:48', '2025-03-19 05:43:48'),
-(35, 27, 11, NULL, NULL, 4500.00, 2, 9000.00, '2025-03-19 05:43:48', '2025-03-19 05:43:48'),
-(36, 28, 12, 2000.00, 10, 1800.00, 5, 9000.00, '2025-03-19 14:46:04', '2025-03-19 14:46:04'),
 (37, 28, 8, 115000.00, 0, 115000.00, 1, 115000.00, '2025-03-19 14:46:04', '2025-03-19 14:46:04');
 
 -- --------------------------------------------------------
@@ -790,11 +776,7 @@ INSERT INTO `stocks` (`id`, `product_id`, `stock_in`, `stock_out`, `current_stoc
 (35, 9, 1, 0, 0, 'purchase', '2025-03-19 01:45:04', '2025-03-19 01:45:04'),
 (36, 9, 3, 0, 3, 'purchase', '2025-03-19 02:05:08', '2025-03-19 02:05:08'),
 (37, 9, 1, 0, 3, 'sale', '2025-03-19 03:48:02', '2025-03-19 03:48:02'),
-(38, 11, 200, 0, 200, 'purchase', '2025-03-19 04:55:29', '2025-03-19 04:55:29'),
 (39, 5, 0, 1, 0, 'sale', '2025-03-19 05:43:48', '2025-03-19 05:43:48'),
-(40, 11, 0, 2, 198, 'sale', '2025-03-19 05:43:48', '2025-03-19 05:43:48'),
-(41, 12, 200, 0, 200, 'purchase', '2025-03-19 14:18:14', '2025-03-19 14:18:14'),
-(42, 12, 0, 5, 195, 'sale', '2025-03-19 14:46:04', '2025-03-19 14:46:04'),
 (43, 8, 0, 1, 1, 'sale', '2025-03-19 14:46:04', '2025-03-19 14:46:04');
 
 -- --------------------------------------------------------
@@ -817,9 +799,9 @@ CREATE TABLE `suppliers` (
 --
 
 INSERT INTO `suppliers` (`id`, `name`, `address`, `phone`, `created_at`, `updated_at`) VALUES
-(1, 'PT. BUNGA CEKATANS', 'Jl. Magelang No.KM.11, Dukuh, Tridadi, Kec. Sleman, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55511s', '62884734590872', '2025-02-13 02:30:40', '2025-02-13 02:35:05'),
+(1, 'PT. BUNGA CEKATAN', 'Jl. Magelang No.KM.11, Dukuh, Tridadi, Kec. Sleman, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55511s', '62884734590872', '2025-02-13 02:30:40', '2025-02-13 02:35:05'),
 (2, 'PT. GRAHA NUGRAHA', 'Jl. Danau Bogor Raya No.33, RT.01/RW.07, Tanah Baru, Kec. Bogor Utara, Kota Bogor, Jawa Barat 16144', '6286379786578', '2025-02-13 02:34:44', '2025-02-13 02:34:44'),
-(4, 'PT. PLASTIK', 'Mojohuro, Jl. Imogiri - Siluk, Sriharjo, Kec. Imogiri, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55782', '6287736282908', '2025-03-06 08:08:28', '2025-03-06 14:42:22');
+(4, 'PT. PLASTIK', 'Jl. Raya serang Km. 12,5 Desa Bitung Jaya, \nKecamatan Cikupa, Tangerang', '6287736282908', '2025-03-06 08:08:28', '2025-03-06 14:42:22');
 
 -- --------------------------------------------------------
 
@@ -847,10 +829,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `user_priv`, `address`, `phone`, `status`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Gilang', 'putratzy7@gmail.com', NULL, '$2y$10$NoEjVX3OuYRgKh2fmR8Bc.y6UjE6vTCh6GYwntU70Jvjm6kkIE4Re', 'superadmin', 'France', '086534567890', 'active', 'AHieafeMqXOR0qSipi2HjwJsj6uKdElKhcO6axhJsTQM280SNqUAXCsRny9k', '2024-12-01 18:49:48', '2025-03-16 18:44:05'),
-(3, 'Cashier 6', 'lngzty7@gmail.com', NULL, '$2y$10$fkw2Ikj6xk5/7UBJkbnIQecN/GA08wcgiSZxLIUBlmv.EkL3OcTXS', 'officer', 'Yogyakarta', '088973623212', 'active', 'S2ieWLT0qA3WOo5gr5iIaqdL0oIrUQCVNFcG2VYS22oRYlsxcTrWwzRPbM7s', '2024-12-07 06:12:06', '2025-03-16 18:44:43'),
-(4, 'Admin 9', 'slametzy7@gmail.com', NULL, '$2y$10$ACaHasgUUxUQ4R0UfO9g.uxXVFQg7DbkXnA4pzW/6tkP9..ZHDEIG', 'admin', 'Egypt', '098654578990', 'active', 'wqhZocIrWHrAq3r2fLjl2wro0npkvRStzd1frLnZCN1zDuensZjRpYrnfcSd', '2024-12-07 08:26:38', '2025-03-16 18:45:03'),
-(7, 'Gudang 5', 'gudang55@gmail.com', NULL, '$2y$10$.LTbp8GWvzzvUcw5kiYpwOwo9y/UEcdGtNtxKYA4A68ObGSh519Am', 'warehouse admin', 'Itali', '68273635611', 'active', '10BewKJho2ICHsDycZwipplf1tIIofp9fmYlx9eKwoV4DBIG27CW8DQCmLE5', '2025-03-12 16:12:35', '2025-03-16 18:52:09');
+(1, 'angel', 'angelylv7@gmail.com', NULL, '$2y$10$NoEjVX3OuYRgKh2fmR8Bc.y6UjE6vTCh6GYwntU70Jvjm6kkIE4Re', 'superadmin', 'France', '086534567890', 'active', 'fwUezrnEDUMhbFvk4FpHAcmuWGY6eaBoEfdRWuUksX6krEdmnXiMU85C4GjK', '2024-12-01 18:49:48', '2025-03-16 18:44:05'),
+(3, 'cashier', 'cashier7@gmail.com', NULL, '$2y$10$MvKLS/fo8Uc46f1J9TtGLuis3OEZjggF/rE1dGh1SqxO.tXkW.zVy', 'officer', 'Ukrain', '088973623212', 'active', 'jheKZLPgyFS2aJHJgldH5gm83GfK5xOFpl7XgpQtzcVGw2wwih5bT0fizfCI', '2024-12-07 06:12:06', '2025-06-30 18:42:32'),
+(4, 'admin', 'admin7@gmail.com', NULL, '$2y$10$0SsO44Uj2ylfdVhm7K.jr.mug1AHtUyPv.Qi6KYVlvOTZg2VfNVDK', 'admin', 'Egypt', '098654578990', 'active', 't8ZrtsQsKTMgqQkOuC36DuLPaZV1CdNB72grQyAYXt2pHVnZBuGFxP38zbLN', '2024-12-07 08:26:38', '2025-06-30 18:41:59'),
+(7, 'storage', 'storage7@gmail.com', NULL, '$2y$10$/iUcSLggEflU2f.LhdO4WuJSFxK7qO/S.JepWsPRA91BWdu309dKS', 'warehouse admin', 'Itali', '68273635611', 'active', 'y5hKJfX9OuqgC1ZkedQQrxIZGM8xESCEgQ1o9xtluMwMdLB9Bj4AeewBqsjl', '2025-03-12 16:12:35', '2025-06-30 18:42:49');
 
 --
 -- Indexes for dumped tables
@@ -1063,7 +1045,7 @@ ALTER TABLE `product_categories`
 -- AUTO_INCREMENT for table `product_logs`
 --
 ALTER TABLE `product_logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `product_units`

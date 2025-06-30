@@ -13,7 +13,7 @@ Cashier-ngl is a web-based cashier application built with Laravel 11, PHP 8.2, a
 ## Installation Guide
 
 ### Step 1: Download the Project
-1. Visit [GitHub Repository](https://github.com/aanglll/cashier-ngl4).
+1. Visit [GitHub Repository](https://github.com/aanglll/cashier-ngl).
 2. Click **Download ZIP**.
 3. Extract the downloaded file to your preferred directory.
 
@@ -21,7 +21,7 @@ Cashier-ngl is a web-based cashier application built with Laravel 11, PHP 8.2, a
 1. Copy the `.env.example` file and rename it to `.env`.
 2. Open the `.env` file and set up the database connection:
    ```env
-   DB_DATABASE=kasirngll
+   DB_DATABASE=cashierngl
    DB_USERNAME=root
    DB_PASSWORD=
    APP_TIMEZONE=Asia/Jakarta
@@ -40,8 +40,8 @@ php artisan key:generate
 
 ### Step 5: Set Up Database
 1. Open [phpMyAdmin](http://localhost/phpmyadmin/).
-2. Create a new database named `kasirngll`.
-3. Click **Import** and select the `kasirngll.sql` file from the project.
+2. Create a new database named `cashierngl`.
+3. Click **Import** and select the `cashierngl.sql` file from the project.
 
 ### Step 6: Link Storage
 ```sh
@@ -60,10 +60,10 @@ The application has predefined user roles with the following credentials:
 
 | Email                 | Password      | Role             |
 |----------------------|--------------|-----------------|
-| putratzy7@gmail.com | password123  | Super Admin     |
-| slametzy7@gmail.com | slamet123    | Admin           |
-| lngzty7@gmail.com   | merah101     | Officer         |
-| gudang55@gmail.com  | gudang123    | Warehouse Admin |
+| angelylv7@gmail.com | password123  | Super Admin     |
+| admin7@gmail.com | admin123    | Admin           |
+| cashier7@gmail.com   | cashier123     | Officer         |
+| storage7@gmail.com  | storage123    | Warehouse Admin |
 
 ## Features & Technologies
 - **Laravel UI** for authentication
