@@ -1,6 +1,6 @@
-# Cashier NGL - Laravel 11
+# Cashier-ngl - Laravel 11
 
-Cashier NGL is a web-based cashier application built with Laravel 11, PHP 8.2, and various essential packages to provide seamless management of sales, purchases, inventory, and user roles.
+Cashier-ngl is a web-based cashier application built with Laravel 11, PHP 8.2, and various essential packages to provide seamless management of sales, purchases, inventory, and user roles.
 
 ## Requirements
 - PHP 8.2
