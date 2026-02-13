@@ -9,14 +9,13 @@
 
 ## Installation
 
-1. Clone the Repository
+1. Clone the Repository:
    ```bash
     git clone https://github.com/aanglll/cashierngl
     cd cashierngl
    ```
 
-2. Configure Environment
-Copy the `.env.example` file, rename it to `.env`, then open the `.env` file and configure the database connection.
+2. Configure Environment: Copy the `.env.example` file, rename it to `.env`, then open the `.env` file and configure the database connection.
    ```env
    DB_DATABASE=cashierngl
    DB_USERNAME=root
@@ -24,25 +23,24 @@ Copy the `.env.example` file, rename it to `.env`, then open the `.env` file and
    APP_TIMEZONE=Asia/Jakarta
    ```
 
-3. Install Dependencies
+3. Install Dependencies:
     ```sh
     composer install
     ```
 
-4. Generate Application Key
+4. Generate Application Key:
     ```sh
     php artisan key:generate
     ```
 
-5. Set Up Database
-Open MySQL, create a new database named `cashierngl`, then import the `cashierngl.sql` file from the project into that database.
+5. Set Up Database: Open MySQL, create a new database named `cashierngl`, then import the `cashierngl.sql` file from the project into that database.
 
-6. Link Storage
+6. Link Storage:
     ```sh
     php artisan storage:link
     ```
 
-7. Run the Application
+7. Run the Application:
     ```sh
     php artisan serve
     ```
