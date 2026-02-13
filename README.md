@@ -1,27 +1,22 @@
-# Cashier-ngl - Laravel 11
-
-Cashier-ngl is a web-based cashier application built with Laravel 11, PHP 8.2, and various essential packages to provide seamless management of sales, purchases, inventory, and user roles.
-
+# Cashierngl 24/7
 ![Dashboard Preview](https://github.com/aanglll/cashier-ngl/raw/main/public/assets/img/dashboard.png)
 
-## Requirements
-- PHP 8.2
-- XAMPP
-- VS Code
-- Composer
-- Laravel 11
-- MySQL (phpMyAdmin)
+## Built With
+*   [Laravel 11](https://laravel.com)
+*   [PHP](https://www.php.net) (specify version, e.g., 8.2+)
+*   [Composer](https://getcomposer.org)
+*   [MySQL](https://www.mysql.com)
 
-## Installation Guide
+## Installation
 
-### Step 1: Download the Project
-1. Visit [GitHub Repository](https://github.com/aanglll/cashier-ngl).
-2. Click **Download ZIP**.
-3. Extract the downloaded file to your preferred directory.
+1. Clone the Repository
+   ```bash
+    git clone https://github.com/aanglll/cashierngl
+    cd cashierngl
+   ```
 
-### Step 2: Configure Environment
-1. Copy the `.env.example` file and rename it to `.env`.
-2. Open the `.env` file and set up the database connection:
+2. Configure Environment
+Copy the `.env.example` file, rename it to `.env`, then open the `.env` file and configure the database connection.
    ```env
    DB_DATABASE=cashierngl
    DB_USERNAME=root
@@ -29,36 +24,31 @@ Cashier-ngl is a web-based cashier application built with Laravel 11, PHP 8.2, a
    APP_TIMEZONE=Asia/Jakarta
    ```
 
-### Step 3: Install Dependencies
-Run the following command in the project directory:
-```sh
-composer install
-```
+3. Install Dependencies
+    ```sh
+    composer install
+    ```
 
-### Step 4: Generate Application Key
-```sh
-php artisan key:generate
-```
+4. Generate Application Key
+    ```sh
+    php artisan key:generate
+    ```
 
-### Step 5: Set Up Database
-1. Open [phpMyAdmin](http://localhost/phpmyadmin/).
-2. Create a new database named `cashierngl`.
-3. Click **Import** and select the `cashierngl.sql` file from the project.
+5. Set Up Database
+Open MySQL, create a new database named `cashierngl`, then import the `cashierngl.sql` file from the project into that database.
 
-### Step 6: Link Storage
-```sh
-php artisan storage:link
-```
+6. Link Storage
+    ```sh
+    php artisan storage:link
+    ```
 
-### Step 7: Run the Application
-Start the Laravel development server:
-```sh
-php artisan serve
-```
-Access the application at `http://127.0.0.1:8000/`.
+7. Run the Application
+    ```sh
+    php artisan serve
+    ```
+    The app will be available at `http://127.0.0.1:8000/`.
 
 ## Default User Roles & Credentials
-The application has predefined user roles with the following credentials:
 
 | Email                 | Password      | Role             |
 |----------------------|--------------|-----------------|
@@ -73,7 +63,6 @@ The application has predefined user roles with the following credentials:
 - **Livewire** for dynamic search functionality
 - **Maatwebsite Excel** for data export to Excel
 - **DOMPDF** for PDF export
-- **Bootstrap** for UI styling
 - **AdminKit Template** ([Demo](https://demo-basic.adminkit.io/))
 - **Database Optimization:** Functions, Stored Procedures, Triggers, Joins, Commit & Rollback
 
@@ -96,4 +85,3 @@ This project is open-source and free to use for educational and commercial purpo
 
 ---
 For any issues or contributions, feel free to create a pull request or open an issue on GitHub.
-
