@@ -21,8 +21,13 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             RoleAndPermissionSeeder::class,
-            // UserSeeder::class,
-            // AdminUserSeeder::class, // Panggil seeder untuk admin user di sini
+            UserSeeder::class,
+            SettingSeeder::class,
+            ProductCategorySeeder::class,
+            ProductUnitSeeder::class,
+            SupplierSeeder::class,
+            CustomerSeeder::class,
+            ProductSeeder::class,
         ]);
     }
 }

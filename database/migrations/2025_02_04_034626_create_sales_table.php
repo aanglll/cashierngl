@@ -16,6 +16,7 @@ return new class extends Migration {
                 ->onDelete('cascade');
 
             $table->foreignId('customer_id')
+                ->nullable()
                 ->constrained('customers')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
@@ -23,7 +24,7 @@ return new class extends Migration {
             $table->decimal('discount', 10, 2)->default(0);
             $table->decimal('ppn', 10, 2)->default(0);
             $table->decimal('total_price', 10, 2);
-            $table->decimal('cash_paid', 10, 2);
+            $table->decimal('cash_paid', 10, 2)->default(0);
             $table->decimal('cash_return', 10, 2)->default(0);
 
             $table->timestamps();

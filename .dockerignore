@@ -1,0 +1,12 @@
+.git
+.editorconfig
+node_modules
+vendor
+storage/*.key
+storage/logs/*.log
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
+.phpunit.cache
+.env
+.env.backup

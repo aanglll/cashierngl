@@ -20,6 +20,8 @@ return new class extends Migration {
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
 
+            $table->decimal('before_discount', 10, 2)->nullable();
+            $table->integer('discount_product')->nullable();
             $table->decimal('selling_price', 10, 2);
             $table->integer('qty')->length(11);
             $table->decimal('sub_total', 10, 2);

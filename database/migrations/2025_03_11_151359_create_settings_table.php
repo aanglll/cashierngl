@@ -21,18 +21,6 @@ return new class extends Migration {
             $table->text('receipt_footer')->nullable();
             $table->timestamps();
         });
-
-        // Insert default data
-        DB::table('settings')->insert([
-            'site_name' => 'Kasirngl',
-            'site_logo' => null,
-            'favicon' => null,
-            'site_title' => null,
-            'receipt_header' => null,
-            'receipt_footer' => null,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
     }
 
     /**
